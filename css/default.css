@@ -1,0 +1,361 @@
+/* ㈜ */
+/* mobile */
+body {
+background: #e8f5f5;
+}
+.wrap {
+max-width: 1140px;
+margin: 0 auto;
+width: 90%;
+display: flex;
+flex-flow: column;
+}
+header, section, footer {
+order: 10;
+}
+/* mobile header */
+.header {
+order: 1;
+display: flex;
+padding: .9375rem 0 1rem;
+background: white;
+position: relative;
+}
+.logo {
+order: 1;
+display: flex;
+justify-content: flex-start;
+align-items: baseline;
+}
+.logo img {
+order: 1;
+width: 140px;
+height: 35px;
+}
+.logo h1 {
+order: 2;
+margin-left: .4375rem;
+font-size: .875rem;
+}
+.nav {
+order: 2;
+display: none;
+}
+.gnb_toggle_btn {
+position: absolute;
+width: 24px;
+height: 24px;
+background: url(../images/hamberger.png) center no-repeat;
+right:0;
+top: 26px;
+}
+/* mobile slide */
+.slide_section {
+text-align: center;
+width: 100vw; 
+margin-left: -5.5%;
+position: relative;
+/* 16/320 */
+order: 2;
+}
+.swiper-pagination .swiper-pagination-bullet {
+border-radius: 1px;
+width: 28px;
+height: 4px;
+background: rgba(255,255,255,.7);
+margin: 0 2px !important;
+}
+.swiper-slide span {
+height: 200px;
+width: 500px;
+display: block;
+overflow: visible;
+}
+.swiper-slide.img_1 {
+background: url(../images/slide08.jpg) no-repeat left bottom fixed;
+background-size: cover;
+}
+.swiper-slide.img_2 {
+background: url(../images/slide09.jpg) no-repeat left bottom fixed;
+background-size: cover;
+}
+.slide_section h2 {
+position: absolute;
+color: white;
+font-size: 1.5rem;
+text-shadow: 2px 2px 1px black;
+z-index: 10;
+left: 50%;
+top: 2.375rem;
+transform: translatex(-50%);
+}
+.card_list {
+display: flex;
+flex-flow: column;
+align-items: center;
+padding: .9375rem 0;
+background: white;
+}
+.card_item {
+text-align: left;
+}
+.card_list h3 {
+display: inline-block;
+}
+.card_list h3::before,
+.card_list h3::after {
+font-family: "font awesome 6";
+font-family: "xeicon";
+font-weight: 800;
+display: inline-block;
+}
+.card_list h3::before {
+left: 1.625rem;
+margin: 0 14px 0 26px;
+font-size: 1.5rem;
+}
+.card_item.item h3::before {
+content: "\eb4f";
+}
+.card_item.item_02 h3::before {
+content: "\e986";
+}
+.card_item.item_03 h3::before {
+content: "\eb65";
+}
+.card_list h3::after {
+content: "\2b";
+font-size: 20px;
+position: absolute;
+top: 50%;
+transform: translatey(-50%);
+text-align: center;
+line-height: 18px;
+width: 22px;
+height: 22px;
+border-radius: 100%;
+background: rgba(0,0,0,.3);
+right: 1.25rem;
+}
+.card_item {
+width: 90.625%;
+/* 290/320 */
+padding: 1.8125rem 0; 
+border-radius: 35px;
+font-size: 1rem;
+color: white;
+position: relative;
+}
+.card_item:not(:first-child) {
+margin-top: .6875rem;
+}
+.card_item.item {
+background: #36a79d;
+order: 1;
+}
+.card_item.item_02 {
+background: #91c631;
+order: 2;
+}
+.card_item.item_03 {
+background: #232d72;
+order: 3;
+}
+/* mobile card_section */
+.card2_section {
+width: 100%;
+order: 3;
+padding-top: 1.875rem;
+}
+.card2_item {
+height: 6.25rem;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+/* 100/16 */
+color: white;
+filter: grayscale(0.4);
+}
+.card2_item:not(:last-child) {
+margin-bottom: .5625rem;
+}
+.card2_item_wrap {
+margin-left: -13px;
+}
+.card2_item::before {
+font-family: 'xeicon';
+position: absolute;
+top: 50%;
+left: 32px;
+transform: translatey(-50%);
+font-size: 3rem;
+}
+.card2_item:first-child::before {
+content: "\e902";
+}
+.card2_item:nth-child(2)::before {
+content: "\ea01";
+} 
+.card2_item:last-child::before {
+content: "\eb59";
+}
+.card2_item::after {
+content: "MORE\2b";
+font-family: "font awesome 6";
+position: absolute;
+right: 17px;
+color: rgba(255,255,255,.5);
+font-size: .5625rem;
+bottom: 17px;
+}
+.card2_item p {
+font-size: .625rem;
+}
+.card2_item h2 {
+font-size: 1.25rem;
+margin-top: .6875rem;
+}
+.card2_item.item {
+background: url(../images/link01.jpg) 80% 50% no-repeat;
+background-size: cover;
+}
+.card2_item.item_02 {
+background: url(../images/link02.jpg) 0 50% no-repeat;
+background-size: cover;
+}
+.card2_item.item_03 {
+background: url(../images/link03.jpg) 0 50% no-repeat;
+background-size: cover;
+}
+/* mobile board_section */
+.board_section {
+order: 4;
+width: 100%;
+padding: 39px 0 34px;
+}
+.notice {
+text-align: justify;
+background: white;
+padding: 27px 16px 30px;
+width: 100%;
+box-sizing: border-box;
+}
+.notice h2 {
+font-size: 1.3125rem;
+color: #333;
+padding-bottom: 16px;
+position: relative;
+}
+.notice h2::after {
+content: "\2b";
+display: inline-block;
+width: 24px;
+height: 24px;
+border-radius: 100%;
+text-align: center;
+background: #8cc63f;
+color: white;
+position: absolute; 
+right: 0;
+}
+.notice p {
+font-size: .5625rem;
+border-top: 1px solid #dddddd;
+padding-top: 28px;
+position: relative;
+}
+.notice p::after {
+content: "2023-03-20";
+color: #aeaeae;
+position: absolute;
+right: 0;
+}
+.question {
+width: 100%;
+height: 100px;
+background: url(../images/link05.jpg) no-repeat;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px 0 22px ;
+box-sizing: border-box;
+margin-top: 10px; 
+}
+.question h2 {
+font-size: 1.3125rem;
+color: white;
+}
+.question > div {
+width: 127px;
+height: 38px;
+background: #8cc63f;
+box-sizing: border-box;
+border-top: 1px solid #869f51;
+border-bottom: 1px solid #869f51;
+}
+.question div p {
+color: white;
+font-size: .625rem;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+line-height: 36px; 
+position: relative;
+}
+.question p::after {
+content: "\2b";
+margin-left: 5px;
+font-size: 15px;
+line-height:1;
+position: absolute;
+top: 9px;
+display: inline-block;
+}
+.footer {
+background: #333;
+width: 100vw;
+order: 5;
+margin-left: -5.5%;
+padding: 25px 0 29px 15px;
+}
+.footer img {
+display: block;
+width: 140px;
+}
+.footer ul {
+margin-top: 19px;
+}
+.footer ul li:first-child {
+color: #a3a3a3;
+
+}
+.footer ul li {
+display: inline-block;
+color: #8b8c8b;
+font-size: .625rem;
+line-height: 100%;
+}
+.footer > p {
+color: #777575;
+font-size: .5rem;
+margin-top: 13px;
+}
+.footer li:first-child {
+padding-right: 70%;
+}
+.footer li:nth-last-child(2) {
+padding-right: 20%;
+}
+/* tablet */
+@media screen and (min-width: 768px){
+
+}
+/* notebook */
+@media screen and (min-width: 992px){
+
+}
+/* desktop */
+@media screen and (min-width: 1200px){
+
+}
