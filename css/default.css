@@ -104,10 +104,8 @@ display: inline-block;
 }
 .card_list h3::before,
 .card_list h3::after {
-font-family: "font awesome 6";
-font-family: "xeicon";
-font-weight: 800;
 display: inline-block;
+font-family: "font awesome 6 free";
 }
 .card_list h3::before {
 left: 1.625rem;
@@ -115,7 +113,7 @@ margin: 0 14px 0 26px;
 font-size: 1.5rem;
 }
 .card_item.item h3::before {
-content: "\eb4f";
+content: "\f275";
 }
 .card_item.item_02 h3::before {
 content: "\e986";
